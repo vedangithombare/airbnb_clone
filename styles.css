@@ -1,0 +1,814 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* NAVBAR */
+.airBnbImg {
+  display: flex;
+  position: relative;
+  width: 118px;
+  height: 40px;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 76px;
+  padding: 12px 64px;
+  align-items: center;
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.headerContainer {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyContainer {
+  position: relative;
+}
+
+.stayClass {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+.anyTime {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  width: 100%;
+  align-items: center;
+  padding: 6px 30px;
+  border-radius: 36px;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+.Anyweek1 {
+  display: flex;
+  width: 11vh;
+}
+
+.AddGuest1 {
+  display: flex;
+  width: 11vh;
+}
+.anywhere,
+.anyWeek {
+  border-right: 1px solid gray;
+}
+
+.anywhere {
+  padding-right: 11px;
+}
+
+.anyWeek {
+  padding-left: 14px;
+}
+.AddGuest {
+  padding-left: 12px;
+}
+.searchGuests1 {
+  width: 5vh;
+  background-color: #ff385c;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 0px;
+  padding: 5px;
+  position: relative;
+  left: 14px;
+}
+.middleContainer {
+  font-size: 18px;
+  display: flex;
+  font-weight: 500;
+  position: relative;
+  left: 64px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 17px;
+}
+.yourHome {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 15px 18px;
+  font-weight: 600;
+  color: gray;
+  font-size: 14px;
+}
+
+#earth {
+  font-size: 22px;
+  color: black;
+}
+.userAccount {
+  background: white;
+  height: 48px;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+  gap: 8px;
+}
+
+#bars {
+  font-size: 20px;
+}
+
+#account {
+  font-size: 32px;
+}
+/* CHECKIN-CHECKOUT */
+.checkIn {
+  display: flex;
+  width: 54%;
+  height: 64px;
+  margin: 0 20%;
+  /* background-color: aquamarine; */
+  border-radius: 36px;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+.destination {
+  /* background-color: bisque; */
+  display: flex;
+  width: 30%;
+  position: relative;
+  border-radius: 40px;
+  flex-direction: column;
+  padding: 0 34px;
+  padding-top: 12px;
+}
+.destination:hover {
+  background-color: #ece9e6;
+}
+
+.where {
+  font-size: 13px;
+  font-weight: 500;
+}
+.des {
+  color: #767474;
+  font-size: 16px;
+}
+
+.checkInOut {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  /* border-left: 1px solid lightgray; */
+  /* margin-top: 14px;
+  margin-bottom: 12px; */
+  left: 10px;
+
+  justify-content: space-evenly;
+}
+
+.justCheckIn {
+  width: 44%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  margin-top: 12px;
+  margin-bottom: 20px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.justCheckIn:hover {
+  background-color: #ece9e6;
+  border-radius: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.checkin1 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.addDates {
+  color: #767474;
+  font-size: 16px;
+}
+.checkInDates {
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  /* border-right: 1px solid lightgray; */
+  position: relative;
+  margin: 0;
+  left: -4px;
+  /* width: 36%; */
+}
+.justCheckOut {
+  width: 44%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  right: 16px;
+  border-right: 1px solid lightgray;
+}
+.justCheckOut:hover {
+  background-color: #ece9e6;
+  border-radius: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.checkOutDates {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.checkOut {
+  font-size: 13px;
+  font-weight: 500;
+}
+.guests {
+  display: flex;
+  width: 39%;
+  position: relative;
+  border-radius: 40px;
+  flex-direction: row;
+  padding-top: 12px;
+  /* left: -2px; */
+  padding: 0 30px;
+  justify-content: space-between;
+  padding: 0px 28px;
+}
+
+.guests:hover {
+  background-color: #ece9e6;
+}
+.guestTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.who {
+  font-size: 13px;
+  font-weight: 500;
+}
+.guestSpan {
+  color: #767474;
+  font-size: 16px;
+}
+.searchGuests {
+  position: relative;
+  width: 21%;
+  height: 66%;
+  background-color: #ff385c;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  padding-top: 12px;
+  top: 12px;
+  left: 23px;
+  justify-content: center;
+  display: flex;
+}
+#guestIcon {
+  font-size: 22px;
+}
+
+.houseOptions {
+  /* background-color: #ff385c; */
+  display: flex;
+  border-top: 1px solid lightgray;
+  margin-top: 20px;
+  position: relative;
+  height: 78px;
+  /* justify-content: space-evenly; */
+  padding: 4px 50px;
+}
+
+.houseOptions button {
+  cursor: pointer;
+}
+.scrollIcons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  align-items: center;
+}
+.travelIcon {
+  flex: 0 0 auto; /* Prevent the icons from shrinking */
+  min-width: 98px; /* Set a minimum width for each icon */
+  text-align: center; /* Center the icons */
+  display: flex;
+  flex-direction: column;
+  color: #948f8f;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+
+.travelIcon:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.travelIcon a {
+  color: #767272;
+}
+.iconButton {
+  cursor: pointer;
+}
+#icons {
+  font-size: 28px;
+  /* color: #767272; */
+}
+.iconText {
+  font-size: 13px;
+  font-weight: 600;
+  /* color: #949292; */
+  padding: 0 24px;
+}
+.icons:hover {
+  color: black;
+}
+
+.right .left {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  position: relative;
+  left: 18px;
+}
+
+#scrollingBtn {
+  background-color: white;
+  border: 1px solid lightgray;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+  position: relative;
+  top: 22px;
+}
+
+.mainContainer {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  height: 100%;
+  padding: 19px;
+}
+.firstContainer {
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(24, 128, 76); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 34px;
+  row-gap: 54px;
+}
+.demoEvent {
+  width: 23%;
+  height: 350px;
+  /* background-color: aquamarine; */
+}
+
+.demoImg {
+  position: relative;
+  background-color: #ff385c;
+  width: 330px;
+  height: 296px;
+  border-radius: 10px;
+}
+#demoRealImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: fill;
+}
+
+.demoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.guestTitle {
+  font-size: 17px;
+  font-weight: 500;
+}
+.hostName {
+  font-weight: 500;
+  color: #949292;
+  font-size: 15px;
+}
+.openBooking {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.pastText {
+  font-size: 30px;
+  font-weight: 500;
+}
+.pastExperiences {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.pastText {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+.secondContainer {
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(249, 155, 32); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 22px;
+  row-gap: 54px;
+}
+
+/*  */
+
+.futureGateways {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfafa;
+  width: 100%;
+  height: auto;
+  margin-top: 4px;
+  padding: 0 80px;
+}
+
+.futureHeading {
+  margin-top: 36px;
+}
+.inspirationText {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.futureList {
+  margin: 0;
+}
+.futureUlList {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 28px 0;
+  padding-bottom: 16px;
+  margin: 0;
+}
+#gatewaysList {
+  margin-right: 30px;
+  color: #767272;
+  cursor: pointer;
+}
+#gatewaysList:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.popular {
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 36px 0;
+  padding-bottom: 52px;
+}
+.popularFirst {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.popularContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeName {
+  font-weight: 500;
+}
+.support {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  border-bottom: 1px solid #c9c9c9;
+  padding: 32px 0;
+  padding-bottom: 50px;
+}
+.supportText {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.supportTextList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.hostingText {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.hostingTextList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.hostingTextList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+.firstText {
+  font-weight: 500;
+}
+.airBnbFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 36px;
+  padding-top: 20px;
+}
+.language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.universalLan {
+  display: flex;
+  gap: 6px;
+}
+#earthIcon {
+  font-size: 20px;
+  padding-top: 4px;
+}
+#eng {
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 4px;
+}
+.rupees {
+  padding: 0px 18px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+}
+
+/* 1408
+ */
+@media (max-width: 1430px) {
+}
+
+/* Extra Large Devices (Desktops, > 1200px) */
+@media (min-width: 1200px) {
+  /* Custom styles for large screens */
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Large Devices (Desktops, 992px to 1200px) */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 12px 40px;
+  }
+  .checkIn {
+    width: 60%;
+  }
+  .firstContainer {
+    gap: 24px;
+    row-gap: 36px;
+  }
+  .demoEvent {
+    width: 28%;
+    height: auto;
+  }
+}
+
+/* Medium Devices (Tablets, 768px to 992px) */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 24px;
+  }
+  .airBnbImg {
+    margin-bottom: 10px;
+  }
+  .middleContainer {
+    left: 24px;
+  }
+  .checkIn {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .firstContainer {
+    gap: 24px;
+    row-gap: 36px;
+  }
+  .demoEvent {
+    width: 45%;
+  }
+}
+
+/* Small Devices (Mobile, 576px to 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 12px;
+  }
+  .middleContainer {
+    font-size: 16px;
+  }
+  .checkIn {
+    width: 100%;
+    margin: 0;
+  }
+  .destination {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .guests {
+    width: 100%;
+    padding: 0;
+  }
+  .firstContainer {
+    gap: 16px;
+    row-gap: 24px;
+  }
+  .demoEvent {
+    width: 90%;
+  }
+}
+
+/* Extra Small Devices (Mobile, < 576px) */
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 8px;
+  }
+  .airBnbImg {
+    width: 90px;
+    height: 30px;
+  }
+  .middleContainer {
+    font-size: 14px;
+  }
+  .checkIn {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .destination {
+    width: 100%;
+    padding: 0 6px;
+  }
+  .guests {
+    width: 100%;
+    padding: 0;
+  }
+  .firstContainer {
+    gap: 10px;
+    row-gap: 14px;
+  }
+  .demoEvent {
+    width: 100%;
+  }
+  .guestSpan {
+    font-size: 14px;
+  }
+  .iconText {
+    font-size: 12px;
+  }
+  .popular {
+    display: flex;
+    flex-direction: row; /* Arrange all elements in a row */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 36px 0;
+    padding-bottom: 52px;
+    flex-wrap: wrap; /* Ensures elements wrap if they don't fit */
+  }
+
+  .popularFirst {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Elements will wrap if necessary */
+  }
+
+  /* Footer class */
+  .airBnbFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Ensures that footer content wraps on smaller screens */
+  }
+
+  .language,
+  .universalLan,
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjusts spacing between elements */
+  }
+
+  .universalLan {
+    gap: 6px;
+  }
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 695px) {
+    .popular {
+      flex-direction: column; /* Stack in a column on smaller screens */
+    }
+
+    .airBnbFooter {
+      flex-direction: column; /* Stack elements in the footer */
+      align-items: flex-start; /* Aligns footer elements to the left */
+      gap: 20px; /* Adds space between stacked elements */
+    }
+
+    .language,
+    .universalLan,
+    .socials {
+      flex-direction: row; /* Ensure elements stay in a row */
+    }
+  }
+}

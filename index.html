@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <script src="./main.js"></script>
+  <title>Airbnb | Holiday rentals, cabins, beach houses& more</title>
+</head>
+
+<body>
+  <div class="Container" id="Container">
+    <div class="headerContainer" id="headerContainer">
+      <!-- Navbar -->
+      <div class="navbar">
+        <img src="./statics/logo.svg" alt="Airbnb logo" class="airBnbImg" />
+        <div class="middleContainer" id="middleContainer">
+          <div class="stayClass " id="stayDiv">
+            <span class="stays">Stays</span>
+            <span class="Experiences" style="color: #bcbaba;">Experiences</span>
+          </div>
+        </div>
+        <div class="settings">
+          <div class="yourHome">
+            <span class="AirbnbHome">Airbnb Your home</span>
+            <span class="material-symbols-outlined" id="earth"> language </span>
+          </div>
+          <div class="userAccount">
+            <span class="material-symbols-outlined" id="bars"> menu </span>
+            <span class="material-symbols-outlined" id="account">
+              account_circle
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Check in Check out -->
+      <div class="checkIn" id="checkIn">
+        <div class="destination" id="destination">
+          <span class="where">Where</span>
+          <span class="des">Search Destination</span>
+        </div>
+
+        <div class="checkInOut" id="checkInOut">
+          <div class="justCheckIn" id="justCheckIn">
+            <div class="checkInDates">
+              <span class="checkin1">Check in</span>
+              <span class="addDates">Add dates</span>
+            </div>
+          </div>
+          <div class="justCheckOut" id="justCheckOut">
+            <div class="checkOutDates">
+              <span class="checkOut">Check Out</span>
+              <span class="addDates">Add dates</span>
+            </div>
+          </div>
+        </div>
+        <div class="guests" id="guests">
+          <div class="guestTexts">
+            <span class="who">Who</span>
+            <span class="guestSpan">Add Guests</span>
+          </div>
+          <div class="searchGuests">
+            <span class="material-symbols-outlined" id="searchIcon"> search </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="houseOptions" id="houseOptions">
+        <button class="left" id="scrollingBtn" onclick="leftScroll()">
+          <span class="material-symbols-outlined"> chevron_left </span>
+        </button>
+        <div class="scrollIcons">
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> cottage </span>
+            <span class="iconText" id="iconText"> Cabins </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> pool </span>
+            <span class="iconText" id="iconText"> Amazing pool </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> holiday_village </span>
+            <span class="iconText" id="iconText"> Holiday Cottage </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> king_bed </span>
+            <span class="iconText" id="iconText"> Rooms </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> castle </span>
+            <span class="iconText" id="iconText"> Castles </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> coffee </span>
+            <span class="iconText" id="iconText"> Bed and Breakfast </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons">trending_up</span>
+            <span class="iconText" id="iconText"> Trending </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> forest </span>
+            <span class="iconText" id="iconText"> Forest </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> surfing </span>
+            <span class="iconText" id="iconText"> Surfing </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> golf_course </span>
+            <span class="iconText" id="iconText"> Golfing </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> houseboat </span>
+            <span class="iconText" id="iconText"> House Boat </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> house </span>
+            <span class="iconText" id="iconText"> Historical House </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> beach_access </span>
+            <span class="iconText" id="iconText"> Beach </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> ac_unit </span>
+            <span class="iconText" id="iconText"> Arctic </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> sailing </span>
+            <span class="iconText" id="iconText"> Boats </span>
+
+          </div>
+          <div class="travelIcon">
+            <span class="material-symbols-outlined" id="icons"> landscape </span>
+            <span class="iconText" id="iconText"> Mountains </span>
+
+          </div>
+        </div>
+        <button class="right" id="scrollingBtn" onclick="rightScroll()">
+          <span class="material-symbols-outlined"> chevron_right </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="bodyContainer" id="bodyContainer">
+      <div class="mainContainer">
+        <div class="firstContainer">
+          <div class="demoEvent">
+            <div class="demoImg"><img id="demoRealImg" src="statics\travel icons\d1.webp" alt=""></div>
+            <div class="demoText">
+              <span class="guestTitle"> Lorem ipsum dolor sit </span>
+              <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+              <span class="openBooking">voluptatibus soluta</span>
+            </div>
+          </div>
+
+          <div class="demoEvent">
+            <div class="demoImg"><img id="demoRealImg"
+                src="https://images.pexels.com/photos/12316664/pexels-photo-12316664.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt=""></div>
+            <div class="demoText">
+              <span class="guestTitle"> Lorem ipsum dolor sit </span>
+              <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+              <span class="openBooking">voluptatibus soluta</span>
+            </div>
+          </div>
+
+          <div class="demoEvent">
+            <div class="demoImg"><img id="demoRealImg" src="statics\travel icons\d2.webp" alt=""></div>
+            <div class="demoText">
+              <span class="guestTitle"> Lorem ipsum dolor sit </span>
+              <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+              <span class="openBooking">voluptatibus soluta</span>
+            </div>
+          </div>
+
+          <div class="demoEvent">
+            <div class="demoImg"><img id="demoRealImg"
+                src="https://images.pexels.com/photos/4031013/pexels-photo-4031013.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt=""></div>
+            <div class="demoText">
+              <span class="guestTitle"> Lorem ipsum dolor sit </span>
+              <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+              <span class="openBooking">voluptatibus soluta</span>
+            </div>
+          </div>
+
+          <div class="demoEvent">
+            <div class="demoImg"><img id="demoRealImg"
+                src="https://images.pexels.com/photos/8755443/pexels-photo-8755443.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt=""></div>
+            <div class="demoText">
+              <span class="guestTitle"> Lorem ipsum dolor sit </span>
+              <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+              <span class="openBooking">voluptatibus soluta</span>
+            </div>
+          </div>
+          <div class="demoEvent">
+            <div class="demoImg"><img id="demoRealImg" src="statics\travel icons\d3.webp" alt=""></div>
+            <div class="demoText">
+              <span class="guestTitle"> Lorem ipsum dolor sit </span>
+              <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+              <span class="openBooking">voluptatibus soluta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pastExperiences">
+          <div class="pastText">
+            <span>Past Experiences</span>
+          </div>
+          <div class="secondContainer">
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://media.istockphoto.com/id/1295744448/photo/guest-house-in-middle-of-natural-surroundings-of-coconut-tree-plantation-pollachi-tamil-nadu.jpg?b=1&s=612x612&w=0&k=20&c=44OaFxORx3grzxNKPxqjOWL5wk2FJvKYph3S-9wVLsg="
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://media.istockphoto.com/id/506903162/photo/luxurious-villa-with-pool.jpg?b=1&s=612x612&w=0&k=20&c=vcCQ5L9Tt2ZurwFhtodR6njSUnMsEn_ZqEmsa0hs9lM="
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/20121925/pexels-photo-20121925/free-photo-of-town-among-palm-trees-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/9879606/pexels-photo-9879606.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/9130978/pexels-photo-9130978.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/4617768/pexels-photo-4617768.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/19754222/pexels-photo-19754222/free-photo-of-bedroom-with-bathtub-and-balcony.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/10415972/pexels-photo-10415972.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/10048841/pexels-photo-10048841.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+
+            <div class="demoEvent">
+              <div class="demoImg"><img id="demoRealImg"
+                  src="https://images.pexels.com/photos/10511460/pexels-photo-10511460.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""></div>
+              <div class="demoText">
+                <span class="guestTitle"> Lorem ipsum dolor sit </span>
+                <span class="hostName">adipisicing elit. Dolor, id quidem</span>
+                <span class="openBooking">voluptatibus soluta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="futureGateways">
+        <div class="futureHeading">
+          <span class="inspirationText">Inspiration for future getaways</span>
+        </div>
+        <div class="futureList">
+          <ul class="futureUlList">
+            <li id="gatewaysList">Popular</li>
+            <li id="gatewaysList">Arts & culture</li>
+            <li id="gatewaysList">Outdoors</li>
+            <li id="gatewaysList">Mountains</li>
+            <li id="gatewaysList">Beach</li>
+            <li id="gatewaysList">Unique stays</li>
+            <li id="gatewaysList">Categories</li>
+            <li id="gatewaysList">Things to do</li>
+          </ul>
+
+          <div class="popular">
+            <div class="popularFirst">
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="popularFirst">
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+            </div>
+            <!--  -->
+            <div class="popularFirst">
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+
+              <div class="popularContent">
+                <span class="placeName">Canmore</span>
+                <span> Apartment rentals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="support">
+          <div class="supportText">
+            <ul class="supportTextList">
+              <li class="firstText">Support</li>
+              <li>Help Centre</li>
+              <li>AirCover</li>
+              <li>Anti-discrimination</li>
+              <li>Disability support</li>
+              <li>Cancellation options</li>
+              <li>Report neighbourhood concern</li>
+            </ul>
+          </div>
+
+          <div class="hostingText">
+            <ul class="hostingTextList">
+              <li class="firstText">Hosting</li>
+              <li>Airbnb your home</li>
+              <li>AirCover for Hosts</li>
+              <li>Hosting resources</li>
+              <li>Community forum</li>
+              <li>Hosting responsibly</li>
+              <li>Join a free Hosting class</li>
+            </ul>
+          </div>
+
+          <div class="airBnbText">
+            <ul class="hostingTextList">
+              <li class="firstText">Airbnb</li>
+              <li>Newsroom</li>
+              <li>New features</li>
+              <li>Careers</li>
+              <li>Investors</li>
+              <li>Airbnb.org emergency stays</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="airBnbFooter">
+        <div class="terms">
+          © 2024 Airbnb, Inc. · Privacy . Terms . Sitemap . Company details
+        </div>
+        <div class="language">
+          <div class="universalLan">
+            <span class="material-symbols-outlined" id="earthIcon">
+              language
+            </span>
+            <span id="eng">English(IN)</span>
+          </div>
+          <span class="rupees"> ₹ INR </span>
+          <div class="socials">
+            <span><i class="fab fa-facebook-square"></i> </span>
+            <span><i class="fab fa-twitter-square"></i> </span>
+            <span><i class="fab fa-instagram-square"></i> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </div>
+</body>
+
+</html>
